@@ -1,0 +1,9 @@
+total 
+drwxrwxr-x test
+-rw-rw-r-- savedPermissions.txt
+-rw-rw-r-- savedPermissions-0.txt
+-rwxr-xr-x question3.sh
+-rwxrwxrwx question1.sh
+-rwxr-xr-x permissionSaver.sh
+-rw-rw-r-- name.txt
+-rwxrw-r-- ipExtractor.sh
