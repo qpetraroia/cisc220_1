@@ -35,7 +35,10 @@ while true; do
          echo "thanks for using the calculator"
          break
      fi 
-
+     if ! [[ $num1 =~ $reg ]] ; then
+         echo "Please enter a real number"
+         continue 
+     fi
      if [[ $operation == "+" ]] 
         then
             total=$((total + num1))

@@ -1,0 +1,22 @@
+#/bin/bash
+
+temp=$(cat $2 | awk '{print $1" " $2}')
+var=$(ls -lR | awk '{print $1" " $9}')
+
+
+for oldWord in $temp; do
+    #echo $oldWord
+    for word in $var; do
+        if  [[ $oldWord == $word ]] ; then
+          echo the
+        fi
+    done     
+done
+
+if [[ $1 == "-s" ]]
+  then 
+     echo "OLD" "CURENT" "FILE"
+     
+        
+         
+fi
