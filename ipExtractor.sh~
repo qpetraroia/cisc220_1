@@ -10,7 +10,6 @@ var=($(ifconfig | grep inet))
 
 for i in "${var[@]}"
 do
-   #look for the word address 
    if [[ $i == ad* ]]; then
        newVar=${i:5}
        if [[ $newVar == 127* ]]; then

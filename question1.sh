@@ -4,8 +4,19 @@
 #Braedan Robinson 10188414
 #Quentin Petraroia 10145835
 
-
-read -p "please enter a number: " num
+reg=[0-9]
+while true; do
+    read -p "please enter a number: " num
+    if ! [[ $num =~ $reg ]] ; then
+        echo "Please enter a real number"
+    else
+         break
+    fi
+    if [[ $num == ":q" ]] ; then
+        echo "thanks for using the calculator"
+        exit 1
+    fi
+done
 total=$num
 while true; do
     
@@ -23,7 +34,7 @@ while true; do
      if  [[ $num1 == ":q" ]]; then
          echo "thanks for using the calculator"
          break
-     fi
+     fi 
 
      if [[ $operation == "+" ]] 
         then
